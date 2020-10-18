@@ -1,0 +1,42 @@
+.header {
+  padding: 10px 0;
+  &__row {
+    @include md-block {
+      flex-flow: column;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &__auth {
+    padding: 12px 30px;
+    @include md-block {
+      margin-top: 15px;
+    }
+  }
+  &__logo {
+    img {
+      width: 155px;
+      height: 65px;
+    }
+  }
+}
+
+.nav {
+  &__link {
+    color: $gray;
+    font-size: 16px;
+    font-weight: 100;
+    transition: $trans;
+    padding: 10px 15px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    @include md-block {
+      padding: 8px 12px;
+      font-size: 15px;
+    }
+    &:hover {
+      color: $gold;
+      border-color: $gold;
+    }
+  }
+}

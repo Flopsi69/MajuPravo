@@ -1,34 +1,445 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
-        <meta name="theme-color" content="#fff">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        @@include("../blocks/modules/header/header.html")
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="js/main.js"></script>
-        <script src="js/vendor.js"></script>
-    </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MajuPravo</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  @@include("../blocks/modules/header/header.html")
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Jumb -->
+    <section class="section jumb">
+      <div class="container">
+        <div class="jumb__row row-flex">
+          <div class="jumb__info col">
+            <div class="jumb__purpose upper">Наша цель</div>
+            <h1 class="jumb__title upper">Освещение и решение
+              общественных проблем </h1>
+            <div class="jumb__caption upper flex a-center">
+              Мы есть во всех 146 районах украины
+              <svg class="icon">
+                <use xlink:href="#ukraine" />
+              </svg>
+            </div>
+
+            <form action="" class="jumb__form">
+              <label for="" class="label jumb__form-label">Выберите район</label>
+
+              <div class="dropdown w-100">
+                <div class="dropdown__value input">Александрийский район</div>
+                <ul class="dropdown__list dropdown-regions">
+                </ul>
+              </div>
+
+              <a href='problems.html' class="btn btn_white jumb__form-btn w-100">Открыть ленту обращений</a>
+            </form>
+          </div>
+
+          <div class="jumb__problems-wrap upper col">
+            <div class="jumb__problems-title text-center">Последние решенные проблемы</div>
+
+            <!-- Carousel -->
+            <div class="jumb__problems-carousel">
+              <!-- Slides -->
+              <div class="jumb__problems-list js-jumb-carousel">
+                <div class="problem jumb__problem">
+                  <div class="jumb__image-wrap">
+                    <img class="problem__image" src="img/temp/problem-solve.jpg" alt="">
+
+                    <div class="problem__status problem__status_done problem__image-plate">решено</div>
+                    <div class="problem__views problem__image-plate flex a-center">
+                      175
+                      <svg class="icon">
+                        <use xlink:href="#eye"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <a href="problem-page.html" class="problem__info flex a-center">
+                    <div class="problem__info-inner">
+                      <div class="problem__district">
+                        Киев, Соломенский район
+                      </div>
+                      <div class="problem__title">
+                        Отсутствие урн в
+                        парке «отрадный»
+                      </div>
+                    </div>
+
+                    <svg class="icon">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="problem jumb__problem">
+                  <div class="jumb__image-wrap">
+                    <img class="problem__image" src="img/temp/problem.jpg" alt="">
+
+                    <div class="problem__status problem__status_done problem__image-plate">решено</div>
+                    <div class="problem__views problem__image-plate flex a-center">
+                      12 750
+                      <svg class="icon">
+                        <use xlink:href="#eye"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <a href="problem-page.html" class="problem__info flex a-center">
+                    <div class="problem__info-inner">
+                      <div class="problem__district">
+                        Lorem, ipsum dolor.
+                      </div>
+                      <div class="problem__title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </div>
+                    </div>
+
+                    <svg class="icon">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="problem jumb__problem">
+                  <div class="jumb__image-wrap">
+                    <img class="problem__image" src="img/temp/problem-solve.jpg" alt="">
+
+                    <div class="problem__status problem__status_done problem__image-plate">решено</div>
+                    <div class="problem__views problem__image-plate flex a-center">
+                      15
+                      <svg class="icon">
+                        <use xlink:href="#eye"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <a href="problem-page.html" class="problem__info flex a-center">
+                    <div class="problem__info-inner">
+                      <div class="problem__district">
+                        Киев, Соломенский район
+                      </div>
+                      <div class="problem__title">
+                        Отсутствие урн в
+                        парке «отрадный»
+                      </div>
+                    </div>
+
+                    <svg class="icon">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="problem jumb__problem">
+                  <div class="jumb__image-wrap">
+                    <img class="problem__image" src="img/temp/problem.jpg" alt="">
+
+                    <div class="problem__status problem__status_done problem__image-plate">решено</div>
+                    <div class="problem__views problem__image-plate flex a-center">
+                      1 275
+                      <svg class="icon">
+                        <use xlink:href="#eye"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <a href="problem-page.html" class="problem__info flex a-center">
+                    <div class="problem__info-inner">
+                      <div class="problem__district">
+                        Еще какой-то текст
+                      </div>
+                      <div class="problem__title">
+                        Очень длинный текст Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vitae!
+                      </div>
+                    </div>
+
+                    <svg class="icon">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Nav -->
+              <button class="btn btn_white carousel-arrow carousel-next jumb__carousel-next">
+                <svg class="icon">
+                  <use xlink:href="#arrow" />
+                </svg>
+              </button>
+              <button class="btn btn_white carousel-arrow carousel-prev jumb__carousel-prev">
+                <svg class="icon">
+                  <use xlink:href="#arrow" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problems -->
+    <section class="section problems upper">
+      <div class="container">
+        <!-- Title -->
+        <h2 class="section__title text-center flex flex-wrap j-center">
+          Обсуждаемые проблемы в
+          <div class="dropdown region__dropdown problems__district">
+            <div class="dropdown__value problems__district-value">Соломенском районе</div>
+            <ul class="dropdown__list dropdown-regions">
+            </ul>
+          </div>
+        </h2>
+
+        <!-- List -->
+        <div class="problems__list row-flex">
+          <!-- Item -->
+          <div class="problem problems__item col">
+            <div class=" problem__image-wrap">
+              <img class='problem__image' src="img/temp/problem-solve.jpg" alt="">
+
+              <div class="problem__status problem__image-plate">в работе</div>
+              <div class="problem__views problem__image-plate flex a-center">
+                127
+                <svg class="icon">
+                  <use xlink:href="#eye" />
+                </svg>
+              </div>
+            </div>
+
+            <a href='problem-page.html' class="problem__info flex a-center">
+              <div class="problem__info-inner">
+                <div class="problem__district">
+                  Киев, Соломенский район
+                </div>
+                <div class="problem__title">
+                  Ужасные пробки
+                  на шулявском мосту
+                </div>
+              </div>
+
+              <svg class="icon">
+                <use xlink:href="#arrow" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="problem problems__item col">
+            <div class=" problem__image-wrap">
+              <img class='problem__image' src="img/temp/problem.jpg" alt="">
+
+              <div class="problem__status problem__image-plate">в работе</div>
+              <div class="problem__views problem__image-plate flex a-center">
+                11 020
+                <svg class="icon">
+                  <use xlink:href="#eye" />
+                </svg>
+              </div>
+            </div>
+
+            <a href='problem-page.html' class="problem__info flex a-center">
+              <div class="problem__info-inner">
+                <div class="problem__district">
+                  Киев, Соломенский район
+                </div>
+                <div class="problem__title">
+                  Ужасные пробки
+                  на шулявском мосту
+                </div>
+              </div>
+
+              <svg class="icon">
+                <use xlink:href="#arrow" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="problem problems__item hidden-lg col">
+            <div class=" problem__image-wrap">
+              <img class='problem__image' src="img/temp/problem-solve.jpg" alt="">
+
+              <div class="problem__status problem__image-plate">в работе</div>
+              <div class="problem__views problem__image-plate flex a-center">
+                1 275
+                <svg class="icon">
+                  <use xlink:href="#eye" />
+                </svg>
+              </div>
+            </div>
+
+            <a href='problem-page.html' class="problem__info flex a-center">
+              <div class="problem__info-inner">
+                <div class="problem__district">
+                  Киев, Соломенский район
+                </div>
+                <div class="problem__title">
+                  Ужасные пробки
+                  на шулявском мосту
+                </div>
+              </div>
+
+              <svg class="icon">
+                <use xlink:href="#arrow" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- All -->
+        <div class="show-all__wrap text-center">
+          <a href="problems.html" class="show-all">Показать ленту обращений</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Teams -->
+    <section class="section teams text-center">
+      <div class="container">
+        <!-- Title -->
+        <h2 class="section__title">Наши команды</h2>
+
+        <!-- List -->
+        <div class="teams__list flex">
+          <a href='teams.html' class="team teams__item">
+            <div class="team__image">
+              <img src="img/temp/team-logo.png" alt="">
+            </div>
+            <div class="team__name">
+              <div class="team__caption">общественная организация</div>
+              <div class="team__title">«Надежда»</div>
+            </div>
+          </a>
+
+          <a href='teams.html' class="team teams__item">
+            <div class="team__image">
+              <img src="img/temp/team-logo.png" alt="">
+            </div>
+            <div class="team__name">
+              <div class="team__caption">общественная организация</div>
+              <div class="team__title">«Надежда»</div>
+            </div>
+          </a>
+
+          <a href='teams.html' class="team teams__item">
+            <div class="team__image">
+              <img src="img/temp/team-logo.png" alt="">
+            </div>
+            <div class="team__name">
+              <div class="team__caption">общественная организация</div>
+              <div class="team__title">«Надежда»</div>
+            </div>
+          </a>
+
+          <a href='teams.html' class="team teams__item">
+            <div class="team__image">
+              <img src="img/temp/team-logo.png" alt="">
+            </div>
+            <div class="team__name">
+              <div class="team__caption">общественная организация</div>
+              <div class="team__title">«Надежда»</div>
+            </div>
+          </a>
+
+          <a href='teams.html' class="team teams__item">
+            <div class="team__image">
+              <img src="img/temp/team-logo.png" alt="">
+            </div>
+            <div class="team__name">
+              <div class="team__caption">общественная организация</div>
+              <div class="team__title">«Надежда»</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Button -->
+        <button class="btn btn_white teams__enter">Вступить</button>
+
+        <!-- All -->
+        <div class="show-all__wrap text-center">
+          <a href="teams.html" class="show-all">Показать все команды</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="section news__wrap">
+      <div class="container">
+        <!-- Title -->
+        <h2 class="section__title text-center">Последние новости</h2>
+
+        <!-- List -->
+        <div class="news__list row-flex">
+          <a href='news-page.html' class="news news_image col" style='background-image: url(img/temp/news-bg.png);'>
+            <div class="news__title">список политических партий, которые участвуют в решении общественных проблем</div>
+          </a>
+
+          <a href='news-page.html' class="news news_image col" style='background-image: url(img/temp/problem.jpg);'>
+            <div class="news__title">список политических партий, которые участвуют в решении общественных проблем</div>
+          </a>
+
+          <a href='news-page.html' class="news news_image col hidden-sm"
+            style='background-image: url(img/temp/problem-solve.jpg);'>
+            <div class="news__title">список политических партий, которые участвуют в решении общественных проблем</div>
+          </a>
+
+          <a href='news-page.html' class="news news_image col hidden-sm"
+            style='background-image: url(img/temp/news-bg.png);'>
+            <div class="news__title">список политических партий, которые участвуют в решении общественных проблем</div>
+          </a>
+
+          <a href='news-page.html' class="news news_image col hidden-sm"
+            style='background-image: url(img/temp/problem.jpg);'>
+            <div class="news__title">список политических партий, которые участвуют в решении общественных проблем</div>
+          </a>
+
+          <a href='news-page.html' class="news news_image col hidden-sm"
+            style='background-image: url(img/temp/news-bg.png);'>
+            <div class="news__title">список политических партий, которые участвуют в решении общественных проблем</div>
+          </a>
+        </div>
+
+        <!-- All -->
+        <div class="show-all__wrap news__all text-center">
+          <a href="news.html" class="show-all">Показать все новости</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
 </html>

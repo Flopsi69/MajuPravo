@@ -1,0 +1,231 @@
+.footer {
+  background-color: #030f26;
+  padding: 35px 0 40px;
+  @include sm-block {
+    padding: 45px 0;
+  }
+  &__logo {
+    width: 84px;
+    flex-shrink: 0;
+    margin-right: 15px;
+  }
+  &__row {
+    justify-content: space-between;
+  }
+  &__col {
+    @include size(4);
+    @include size-md(12);
+    @include md-block {
+      justify-content: center;
+    }
+  }
+  &__info {
+    @include size-lg(5);
+    @include md-block {
+      justify-content: center;
+    }
+  }
+  &__title {
+    color: $gray;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    @include sm-block {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  }
+  &__descr {
+    color: $gray;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 230px;
+    @include lg-block {
+      font-size: 12px;
+      line-height: 1.4;
+    }
+  }
+  &__subscribe {
+    @include size-lg(4);
+    max-width: 280px;
+    width: 100%;
+    @include md-block {
+      max-width: 100%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+  &__socials {
+    @include size-lg(3);
+  }
+}
+
+.socials {
+  margin: 0 -7px;
+  svg {
+    fill: $gray;
+    max-width: 26px;
+    max-height: 26px;
+    transition: $trans;
+  }
+  &__item {
+    margin: 0 7px;
+    &:hover {
+      svg {
+        fill: $gold;
+        transform: scale(1.15);
+      }
+    }
+  }
+}
+
+.subscribe {
+  max-width: 280px;
+  margin: 0 auto;
+  &__input {
+    padding-right: 55px;
+    background: $blue;
+  }
+  &__label {
+    @include sm-block {
+      text-align: center;
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  padding: 15px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  outline: 0;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: rgba($blue, 0.75);
+  transition: $trans;
+  pointer-events: none;
+  opacity: 0;
+  color: $blue;
+  &_active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  &__body {
+    position: relative;
+    margin: auto;
+    display: none;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background-color: $gray;
+    padding: 12px 30px 35px;
+  }
+  &__close {
+    position: absolute;
+    right: 0;
+    border: 0;
+    top: 0;
+    outline: none;
+    line-height: 0;
+    cursor: pointer;
+    background: red;
+    padding: rem(8);
+    transition: $trans;
+    &:hover {
+      background: darken(red, 10);
+    }
+    &-icon {
+      width: rem(15);
+      height: rem(15);
+    }
+  }
+  &__logo {
+    width: 100px;
+    height: 125px;
+    margin: 0 auto 25px;
+    img {
+      max-width: 100%;
+      max-width: 100%;
+    }
+  }
+  &__label {
+    font-weight: 400;
+  }
+  &__title {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  &__label {
+    color: #03102b;
+    font-size: 13px;
+  }
+  &__group {
+    & + & {
+      margin-top: 15px;
+    }
+  }
+  &__input {
+    background-color: #e0e0e0;
+    color: $black;
+    &-btn {
+      fill: #929292;
+    }
+    &:focus {
+      background: $gray;
+      box-shadow: 0 0 0 2px $blue;
+    }
+  }
+  ::placeholder {
+    color: rgba(#071329, 0.6);
+  }
+}
+
+.sign-in {
+  &__forgot {
+    color: rgba($blue, 0.5);
+    font-size: 12px;
+    text-decoration: underline;
+    &:hover {
+      color: $gold;
+    }
+    &-wrap {
+      margin: 8px 0 16px;
+    }
+  }
+
+  &__reg {
+    border-top: 1px solid rgba(#0a1a37, 0.25);
+    padding-top: 20px;
+    margin-top: 20px;
+    &-title {
+      color: #05173b;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.sign-up {
+  &__submit {
+    margin-top: 25px;
+  }
+  &__auth {
+    border-bottom: 1px solid rgba(#0a1a37, 0.25);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    &-title {
+      color: #05173b;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+  }
+}
