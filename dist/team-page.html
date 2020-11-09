@@ -108,292 +108,190 @@
   <main class="main main__page">
     <!-- Paganation -->
     <div class="breadcrumbs container">
-      <a href="problems.html" class="breadcrumbs__item">Список проблем</a>
-      <a href="problems.html" class="breadcrumbs__item">Соломянский район</a>
-      <a href="#" class="breadcrumbs__item active">Помойка во дворе жилого дома</a>
+      <a href="problems.html" class="breadcrumbs__item">Наши команды</a>
+      <a href="#" class="breadcrumbs__item active">Слуга народа</a>
     </div>
 
-    <section class="problem-page">
+    <!-- Team Info -->
+    <section class="section team-page">
       <div class="container">
         <!-- Title -->
-        <h1 class="problem-page__title page-title flex a-center">
-          Помойка во дворе жилого дома
-          <span class="problem-page__status upper">В обработке</span>
+        <h1 class="team-page__title page-title flex a-center">
+          Слуга Народа
+          <span class="team-page__type upper">Политическая партия</span>
         </h1>
 
-        <!-- Slider + Persons -->
-        <div class="problem-page__hero row-flex">
-          <div class="problem-page__gallery gallery col">
-            <div class="gallery__main">
-              <img src="img/temp/problem-page-hero.jpg" alt="">
-              <img src="img/temp/problem-page-hero.jpg" alt="">
-              <img src="img/temp/problem-page-hero.jpg" alt="">
-              <img src="img/temp/problem-page-hero.jpg" alt="">
-              <img src="img/temp/problem-page-hero.jpg" alt="">
-            </div>
-            <div class="gallery__second">
-              <img src="img/temp/problem-page-hero.jpg" alt="">
-              <img src="img/temp/problem-page-hero.jpg" alt="">
-              <img src="img/temp/problem-page-hero.jpg" alt="">
-              <img src="img/temp/problem-page-hero.jpg" alt="">
-              <img src="img/temp/problem-page-hero.jpg" alt="">
-            </div>
-
-            <!-- Nav -->
-            <button class="btn carousel-arrow carousel-next gallery__arrow gallery__next">
-              <svg class="icon">
-                <use xlink:href="#down-arrow" />
-              </svg>
-            </button>
-            <button class="btn carousel-arrow carousel-prev gallery__arrow gallery__prev">
-              <svg class="icon">
-                <use xlink:href="#down-arrow" />
-              </svg>
-            </button>
-          </div>
-
-          <div class="problem-page__command command col">
-            <div class="problem-page__block">
-              <div class="problem-page__block-title">
-                Автор обращения <span></span>
-              </div>
-
-              <div class="person problem-page__author">
-                <div class="person__image">
-                  <img src="img/temp/person-photo.png" alt="">
-                </div>
-                <div class="person__info">
-                  <div class="person__name">Роман Богодун</div>
-                  <div class="person__caption">СЕО Фонда «Радуга»</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="problem-page__block command__groups">
-              <div class="problem-page__block-title">
-                Рабочая группа <span></span>
-              </div>
-
-              <div class="command__persons">
-                <div class="person command__person">
-                  <div class="person__image">
-                    <img src="img/temp/person-photo.png" alt="">
-                    <div class="person__status person__status_pending ">
-                      <svg class="icon">
-                        <use xlink:href="#hourglass" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="person__info">
-                    <div class="person__name">Роман Богодун</div>
-                    <div class="person__caption">СЕО Фонда «Радуга»</div>
-                  </div>
-                </div>
-
-                <div class="person command__person">
-                  <div class="person__image">
-                    <img src="img/temp/person-photo.png" alt="">
-                    <div class="person__status">
-                      <svg class="icon">
-                        <use xlink:href="#correct" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="person__info">
-                    <div class="person__name">Роман Богодун</div>
-                    <div class="person__caption">СЕО Фонда «Радуга»</div>
-                  </div>
-                </div>
-              </div>
-
-              <button class="btn btn_trans command__enter w-100">Вступить в рабочую группу</button>
-            </div>
-          </div>
-        </div>
-
         <!-- About -->
-        <div class="problem-page__block">
-          <div class="problem-page__block-title">
-            Информация об обращении <span></span>
+        <div class="team__about row-flex a-start block">
+          <!-- Image -->
+          <div class="team__about-logo col">
+            <img src="img/temp/team-logo.png" alt="">
           </div>
 
-          <div class="problem-page__metrics metrics row-flex j-between">
-            <div class="problem-page__metric metric col">
-              <div class="metric__title">Дата создания: </div>
-              <div class="metric__value">
-                <svg class="icon">
-                  <use xlink:href="#date" />
-                </svg>
-                <span>12.09.2020</span>
-              </div>
-            </div>
+          <!-- Info -->
+          <div class="team__about-info col">
+            <h2 class="block__title">
+              О команде
+              <span></span>
+            </h2>
 
-            <div class="problem-page__metric metric col">
-              <div class="metric__title">Город:</div>
-              <div class="metric__value">
-                <svg class="icon">
-                  <use xlink:href="#google-place" />
-                </svg>
-                <span>Киев</span>
-              </div>
-            </div>
-
-            <div class="problem-page__metric metric col">
-              <div class="metric__title">Район:</div>
-              <div class="metric__value">
-                <svg class="icon">
-                  <use xlink:href="#google-place" />
-                </svg>
-                <span>Соломянский</span>
-              </div>
-            </div>
-
-            <div class="problem-page__metric metric col">
-              <div class="metric__title">Статус: </div>
-              <div class="metric__value"><span>В обработке</span></div>
-            </div>
-
-            <div class="problem-page__metric metric col">
-              <div class="metric__title">Просмотров:</div>
-              <div class="metric__value">
-                <svg class="icon">
-                  <use xlink:href="#eye" />
-                </svg>
-                <span>126 255</span>
-              </div>
-            </div>
-
-            <div class="problem-page__metric metric col">
-              <div class="metric__title">Подписей:</div>
-              <div class="metric__value">
-                <svg class="icon">
-                  <use xlink:href="#like" />
-                </svg>
-                <span>12 256</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="problem-page__block-descr">
-            <p>
+            <div class="team__about-descr">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-              rem
-              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-              explicabo.
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-              magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-              suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
-              in
-              ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
-              nulla pariatur?
-            </p>
+              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+              consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+              dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+              incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+              exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+              dolorem eum fugiat quo voluptas nulla pariatur?
+            </div>
           </div>
 
-          <button class='btn btn_white btn_icon problem-page__subscribe'>
-            <svg class="icon">
-              <use xlink:href="#like" />
-            </svg>
-            Подписаться
-          </button>
         </div>
 
-        <!-- Map -->
-        <div class="problem-page__block">
-          <div class="problem-page__block-title">
-            Место на карте <span></span>
+        <!-- Members -->
+        <div class="block team__members">
+          <!-- Block title -->
+          <h2 class="block__title">
+            Участники команды
+            <span></span>
+          </h2>
+
+          <!-- List -->
+          <div class="team__members-lis row-flex">
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
+
+            <!-- Member -->
+            <div class="team__member col">
+              <div class="team__member-image">
+                <img src="img/temp/person-photo.png" alt="">
+              </div>
+              <div class="team__member-name">Роман Богодун</div>
+            </div>
           </div>
 
-          <div class="problem-page__map">
-            <img src="img/temp/map.jpg" alt="">
-            <div class="problem-page__map-plate upper">
-              <div class="problem-page__map-title">Адрес</div>
-              <div class="problem-page__map-value">Киев, Соломянский район, пр. Отрадный 15/2</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="problem-page__block">
-          <div class="problem-page__block-title">
-            Подследние подписи <span></span>
-          </div>
-
-          <div class="subscribers row-flex">
-            <!-- Person -->
-            <div class="subscribers__person col">
-              <div class="subscribers__image">
-                <img src="img/temp/person-photo.png" alt="">
-              </div>
-              <div class="subscribers__name">Роман Богодун</div>
-            </div>
-
-            <!-- Person -->
-            <div class="subscribers__person col">
-              <div class="subscribers__image">
-                <img src="img/temp/person-photo.png" alt="">
-              </div>
-              <div class="subscribers__name">Роман Богодун</div>
-            </div>
-
-            <!-- Person -->
-            <div class="subscribers__person col">
-              <div class="subscribers__image">
-                <img src="img/temp/person-photo.png" alt="">
-              </div>
-              <div class="subscribers__name">Роман Богодун</div>
-            </div>
-
-            <!-- Person -->
-            <div class="subscribers__person col">
-              <div class="subscribers__image">
-                <img src="img/temp/person-photo.png" alt="">
-              </div>
-              <div class="subscribers__name">Роман Богодун</div>
-            </div>
-
-            <!-- Person -->
-            <div class="subscribers__person col">
-              <div class="subscribers__image">
-                <img src="img/temp/person-photo.png" alt="">
-              </div>
-              <div class="subscribers__name">Роман Богодун</div>
-            </div>
-
-            <!-- Person -->
-            <div class="subscribers__person col">
-              <div class="subscribers__image">
-                <img src="img/temp/person-photo.png" alt="">
-              </div>
-              <div class="subscribers__name">Роман Богодун</div>
-            </div>
-
-            <!-- Person -->
-            <div class="subscribers__person hidden-lg col">
-              <div class="subscribers__image">
-                <img src="img/temp/person-photo.png" alt="">
-              </div>
-              <div class="subscribers__name">Роман Богодун</div>
-            </div>
-
-            <!-- Person -->
-            <div class="subscribers__person hidden-lg col">
-              <div class="subscribers__image">
-                <img src="img/temp/person-photo.png" alt="">
-              </div>
-              <div class="subscribers__name">Роман Богодун</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="problem-page__block">
-          <div class="problem-page__block-title">
-            Обсуждение проблемы <span></span>
-          </div>
         </div>
       </div>
     </section>
-
   </main>
   <div class="modal">
   <!-- Sign In -->

@@ -7,7 +7,7 @@
       text-align: center;
     }
   }
-  &__auth {
+  &__auth-sign {
     padding: 12px 30px;
     @include md-block {
       margin-top: 15px;
@@ -38,5 +38,128 @@
       color: $gold;
       border-color: $gold;
     }
+  }
+}
+
+.auth {
+  &__notifications {
+    margin-right: 30px;
+  }
+  &-user {
+    position: relative;
+    &__dropdown {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      padding-top: 15px;
+      right: 0;
+      top: 110%;
+      background: #fff;
+      @include md-block {
+        // left: 0;
+      }
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      white-space: nowrap;
+      letter-spacing: 0.5px;
+      color: $blue;
+      fill: $blue;
+      padding: 10px 15px;
+      svg {
+        position: relative;
+        left: 0;
+        width: 16px;
+        height: 18px;
+        margin-right: 14px;
+        transition: left 0.5s;
+      }
+      &.active {
+        pointer-events: none;
+        border-top: 1px solid $blue;
+        border-bottom: 1px solid $blue;
+
+        background-color: #ccc;
+      }
+      &:hover {
+        background-color: $blue;
+        color: #fff;
+        fill: #fff;
+        svg {
+          left: 5px;
+        }
+      }
+      &.exit {
+        color: #d22d25;
+        fill: #d22d25;
+        border-top: 1px solid $blue;
+        padding: 15px;
+        margin-top: 15px;
+        &:hover {
+          color: red;
+          fill: red;
+        }
+      }
+    }
+    &__head {
+      cursor: pointer;
+      &:hover {
+        svg {
+          fill: $gold;
+        }
+        img {
+          border-color: $gold;
+        }
+      }
+    }
+    &__arrow {
+      width: 20px;
+      height: 25px;
+      fill: #ffffff;
+      transition: 0.5s;
+      .active & {
+        transform: rotate(180deg);
+        fill: $gold;
+      }
+    }
+    &__photo {
+      border-radius: 50%;
+      border: 1px solid #fff;
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      margin-right: 18px;
+      transition: 0.5s;
+      .active & {
+        border-color: $gold;
+      }
+    }
+  }
+}
+
+.notifications {
+  position: relative;
+  &__icon {
+    width: 20px;
+    height: 25px;
+    fill: #ffffff;
+  }
+  &__count {
+    position: absolute;
+    text-align: center;
+    white-space: nowrap;
+    bottom: 0px;
+    right: -5px;
+    border-radius: 50%;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #d22d25;
+    min-width: 14px;
+    padding: 2px 4px;
+    height: 14px;
   }
 }

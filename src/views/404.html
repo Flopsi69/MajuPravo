@@ -1,1 +1,69 @@
-<h3>Page not found</h3>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MajuPravo</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  @@include("../blocks/modules/header/header.html")
+
+  <!-- Main -->
+  <main class="main main__page ">
+    <!-- Team Info -->
+    <section class="section error-page text-center">
+      <div class="container error-page__container">
+        <div class="error-page__info upper">
+          <div class="error-page__code">Код ошибки: 404</div>
+          <div class="error-page__title">Страницу не найдено</div>
+          <div class="error-page__caption">Похоже, мы не можем найти нужную вам страницу.</div>
+        </div>
+
+        <div class="tech__caption upper">Приєднуйтесь до вашого району в Facebook</div>
+
+        <div class="region text-left">
+          <label class="label" for="">Виберіть ваш район</label>
+
+          <div class="dropdown">
+            <div class="dropdown__value input">Александрийский район</div>
+            <ul class="dropdown__list dropdown-regions">
+            </ul>
+          </div>
+
+          <a href="https://www.facebook.com/groups/920244915138042/"
+            class="btn btn_white region__btn upper w-100">Приєднатися</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
+</html>

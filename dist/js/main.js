@@ -642,7 +642,11 @@ function createRegion(region) {
 }
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
-  // Dropdwon regions
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".auth-user__head").on("click", function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass("active");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".auth-user__dropdown").slideToggle();
+  }); // Dropdwon regions
+
   var _iterator = _createForOfIteratorHelper(regions),
       _step;
 

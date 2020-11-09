@@ -605,6 +605,11 @@ function createRegion(region) {
 }
 
 $(document).ready(function () {
+  $(".auth-user__head").on("click", function () {
+    $(this).toggleClass("active");
+    $(".auth-user__dropdown").slideToggle();
+  });
+
   // Dropdwon regions
   for (let region of regions) {
     $(".dropdown-regions").append(createRegion(region));

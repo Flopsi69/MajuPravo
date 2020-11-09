@@ -7,13 +7,65 @@
 
       <nav class="nav upper col">
         <a href='teams.html' class='nav__link'>Команды</a>
-        <!-- <a href='#' class='nav__link'>Вступить</a> -->
         <a href='#' class='nav__link'>Ресурсы </a>
         <a href='#' class='nav__link'>Блог</a>
         <a href='#' class='nav__link'>Помощь</a>
       </nav>
 
-      <button class="btn btn_white header__auth col modal-trigger" modal-target='.sign-in'>Войти /
+      <div class="auth flex a-center col">
+        <!-- Notifications -->
+        <div class="notifications auth__notifications">
+          <svg class="notifications__icon">
+            <use xlink:href="#notification" />
+          </svg>
+          <div class="notifications__count">2</div>
+        </div>
+
+        <!-- User Dropdown -->
+        <div class="auth-user">
+          <div class="auth-user__head flex a-center">
+            <img class='auth-user__photo' src="img/temp/person-photo.png" alt="">
+
+            <svg class="auth-user__arrow">
+              <use xlink:href="#down-arrow" />
+            </svg>
+          </div>
+          <!-- Dropdown -->
+          <div class="auth-user__dropdown">
+            <a class="auth-user__link active" href="">
+              <svg class="icon">
+                <use xlink:href="#user"></use>
+              </svg>
+              Профиль
+            </a>
+            <a class="auth-user__link" href="">
+              <svg class="icon">
+                <use xlink:href="#population"></use>
+              </svg>
+              Мои команды
+            </a>
+            <a class="auth-user__link" href="">
+              <svg class="icon">
+                <use xlink:href="#to-do-list"></use>
+              </svg>
+              Мои заявки
+            </a>
+            <a class="auth-user__link" href="">
+              <svg class="icon">
+                <use xlink:href="#notification"></use>
+              </svg>
+              Уведомления
+            </a>
+            <a class="auth-user__link exit" href="">
+              <svg class="icon">
+                <use xlink:href="#logout"></use>
+              </svg>
+              Выйти
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="btn btn_white header__auth-sing col modal-trigger" modal-target='.sign-in'>Войти /
         регистрация</button>
     </div>
   </div>
