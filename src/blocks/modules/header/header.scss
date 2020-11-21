@@ -42,6 +42,9 @@
 }
 
 .auth {
+  @include md-block {
+    margin-top: 15px;
+  }
   &__notifications {
     margin-right: 30px;
   }
